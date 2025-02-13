@@ -28,17 +28,26 @@ Para rodar o servidor e o cliente localmente, siga os passos abaixo:
 
    ```bash
    git clone <URL_DO_REPOSITORIO>
+   ```
 2. Crie e ative um ambiente virtual para instalar as dependências (recomendado):
-
+  ```bash
   python -m venv .venv
+  ```
+  ```bash
   source .venv/bin/activate   # Para sistemas Unix-based
+  ```
+  ```bash
   .venv\Scripts\activate      # Para Windows
+  ```
 3. Instale as dependências: 
+   ```bash
    pip install -r requirements.txt
-
+   ```
 4. Execute o servidor:
+   ```bash
    python Servidor.py
-
+   ```
 5. Em outro terminal, execute o cliente para fazer uma requisição HTTPS ao servidor:
+   ```bash
    python requisicao.py
-
+   ```
