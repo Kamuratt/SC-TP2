@@ -2,12 +2,11 @@
 
 ## Bibliotecas e Ferramentas Utilizadas
 
-- **Python**: `3.x.x` (Verifique com `python --version`)
-- **ssl** (módulo integrado ao Python, versão do OpenSSL: `OpenSSL 1.x.x`)
-- **requests**: `x.x.x` (Obtido com `pip show requests`)
-- **cryptography**: `x.x.x` (Obtido com `pip show cryptography`)
-- **OpenSSL**: `1.x.x` (Caso tenha sido instalado localmente, use `openssl version` para verificar)
-
+- **Python**: 3.11.7
+- **ssl**: 3.0.13
+- **requests**: 2.32.3
+- **cryptography**: 44.0.1
+- **OpenSSL**: 3.0.13
 ## Descrição do Projeto
 
 Este projeto implementa um servidor HTTPS e um cliente que realiza requisições seguras para este servidor. O servidor utiliza um certificado autoassinado gerado com o algoritmo RSA e a biblioteca `cryptography`. A comunicação entre cliente e servidor é garantida com criptografia TLS/SSL, utilizando o protocolo HTTPS.
