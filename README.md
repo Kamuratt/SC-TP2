@@ -33,9 +33,11 @@ Para rodar o servidor e o cliente localmente, siga os passos abaixo:
   ```bash
   python -m venv .venv
   ```
+  
   ```bash
   source .venv/bin/activate   # Para sistemas Unix-based
   ```
+  
   ```bash
   .venv\Scripts\activate      # Para Windows
   ```
