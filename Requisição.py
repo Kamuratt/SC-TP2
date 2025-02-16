@@ -37,6 +37,23 @@ if common_name == 'localhost':
 else:
     logging.error("Certificado do servidor NÃO corresponde ao esperado!")
 
+# Verificar o 'organizationName' no campo 'issuer' do certificado
+issuer = peer_cert.get('issuer', [])
+logging.info(f"Issuer do certificado: {issuer}")  # Imprimir o conteúdo do issuer para depuração
+
+found_organization = False
+
+# Percorrer a tupla de tuplas no issuer
+for field in issuer:
+    if field[0][0] == 'organizationName' and field[0][1] == 'Minha Empresa':  # Atualize para o valor correto
+        found_organization = True
+        break
+
+if found_organization:
+    logging.info("Certificado emitido pela organização esperada!")
+else:
+    logging.error("Certificado NÃO é da organização esperada!")
+
 # Configurar conexão HTTP/2
 h2_conn = H2Connection()
 h2_conn.initiate_connection()
