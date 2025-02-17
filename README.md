@@ -12,9 +12,6 @@ A implementação também inclui a configuração do protocolo **HTTP/2** para m
 - **ssl**: 3.0.13  
   Biblioteca padrão do Python utilizada para configurar as conexões seguras TLS/SSL, incluindo verificação de certificados, criptografia e suporte ao protocolo HTTPS.
 
-- **requests**: 2.32.3  
-  Biblioteca para facilitar a realização de requisições HTTP/HTTPS, garantindo a comunicação segura com o servidor.
-
 - **cryptography**: 44.0.1  
   Biblioteca utilizada para geração de chaves RSA, criação de certificados digitais e criptografia de dados. Ela foi essencial para criar o certificado autoassinado utilizado na comunicação segura.
 
